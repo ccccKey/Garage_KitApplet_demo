@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="homePageBanner">
+
+  <swiper class="banner" indicator-dots="{{false}}" autoplay="false">
+    <block wx:for="{{homePageImgs}}" wx:for-item="item" wx:for-index="i">
+      <swiper-item>
+        <image class="bannerImg" src="{{item}}" catchtap="gotoActivites" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+</view>

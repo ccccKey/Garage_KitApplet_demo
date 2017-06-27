@@ -1,0 +1,14 @@
+.homePageBanner {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  width: 100%;
+  height: 400rpx;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 400rpx;
+}
