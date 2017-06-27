@@ -1,0 +1,8 @@
+<template name="shopItem-template">
+  <view class="shopItem">
+    <image class="img" src="{{img}}"></image>
+    <text class="name">{{name}}</text>
+    <text class="cost">{{costNum}}</text>
+    <text class="sellNum">已售出{{sellNum}}</text>
+  </view>
+</template>

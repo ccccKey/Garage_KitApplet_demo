@@ -1,4 +1,5 @@
-<!--index.wxml-->
+<import src="../shopItem/shopItem-template.wxml" />
+
 <view class="homePageBanner">
 
   <swiper class="banner" indicator-dots="{{false}}" autoplay="false">
@@ -8,5 +9,13 @@
       </swiper-item>
     </block>
   </swiper>
+
+  <view class="shopItemContent">
+    <block wx:for="{{ItemArr}}" wx:for-item="item" wx:for-index="i">
+      <view class="shopItem" catchtap="onShopItemClick" data-shop-Id="{{item.shopId}}">
+        <template is="shopItem-template" data="{{...item}}" />
+      </view>
+    </block>
+  </view>
 
 </view>

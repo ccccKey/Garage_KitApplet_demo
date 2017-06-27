@@ -1,3 +1,5 @@
+@import "../shopItem/shopItem-template.wxss"
+
 .homePageBanner {
   display: flex;
   flex-direction: column;
@@ -11,4 +13,13 @@
 .bannerImg {
   width: 100%;
   height: 400rpx;
+}
+
+.shopItemContent{
+  height: 1500rpx;
+  margin: 40rpx 0 40rpx 0;
+}
+
+.shopItem{
+  margin-bottom: 40rpx;
 }

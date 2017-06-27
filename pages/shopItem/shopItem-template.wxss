@@ -1,0 +1,24 @@
+.shopItem-template{
+  display: flex;
+  flex-direction: column;
+}
+
+.img{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.name{
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+}
+
+.cost{
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+}
+
+.sellNum{
+  font-size: 24rpx;
+  letter-spacing: 2rpx;
+}
