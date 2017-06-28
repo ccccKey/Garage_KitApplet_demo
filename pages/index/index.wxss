@@ -1,4 +1,4 @@
-@import "../shopItem/shopItem-template.wxss"
+@import "../shopItem/shopItem-template.wxss";
 
 .homePageBanner {
   display: flex;
@@ -17,9 +17,10 @@
 
 .shopItemContent{
   height: 1500rpx;
-  margin: 40rpx 0 40rpx 0;
+  margin: 30rpx 0;
 }
 
 .shopItem{
-  margin-bottom: 40rpx;
+  margin-bottom: 20rpx;
 }
+

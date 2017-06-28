@@ -11,7 +11,7 @@ Page({
       {
         shopId : 10001,
         img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        name : "这是商品名字1",
+        name: "这是商品名字1,商品描述1述abcdefghijk",
         costNum : 100,
         sellNum : 55,
       },

@@ -1,19 +1,27 @@
-.shopItem-template{
+.shopItem{
+  height: 350rpx;
   display: flex;
+  float: left;
   flex-direction: column;
+  margin: 0 3rpx 0 5rpx;
 }
 
 .img{
-  width: 100rpx;
-  height: 100rpx;
+  width: 360rpx;
+  height: 240rpx;
+  padding-bottom: 10rpx;
 }
 
 .name{
+  padding-top: 220rpx;
+  position: absolute;
+  width: 360rpx;
   font-size: 24rpx;
   letter-spacing: 2rpx;
 }
 
 .cost{
+  padding-top: 50rpx;
   font-size: 24rpx;
   letter-spacing: 2rpx;
 }
@@ -22,3 +30,9 @@
   font-size: 24rpx;
   letter-spacing: 2rpx;
 }
+
+/*.movieItem-title{
+    margin-bottom: 16rpx;
+    font-size: 24rpx;
+    color: #666;
+}*/

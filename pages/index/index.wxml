@@ -19,3 +19,14 @@
   </view>
 
 </view>
+
+<!--
+<template name="moreMovieGridTemplate">
+  <view class="allContainer">
+    <block wx:for="{{movies}}" wx:for-item="movie">
+      <view class="moreMovieContainer">
+        <template is="movieItemTemplate" data="{{...movie}}" />
+      </view>
+    </block>
+  </view>
+</template>-->
