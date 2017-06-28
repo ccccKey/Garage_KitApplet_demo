@@ -6,40 +6,54 @@ Page({
     homePageImgs : [
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
     ],
-    
-    ItemArr : [
-      {
-        shopId : 10001,
-        img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        name: "这是商品名字1,商品描述1述abcdefghijk",
-        costNum : 100,
-        sellNum : 55,
-      },
-      {
-        shopId: 10002,
-        img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        name: "这是商品名字2",
-        costNum: 100,
-        sellNum: 55,
-      },
-      {
-        shopId: 10003,
-        img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        name: "这是商品名字3",
-        costNum: 100,
-        sellNum: 55,
-      },
-      {
-        shopId: 10004,
-        img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-        name: "这是商品名字4",
-        costNum: 100,
-        sellNum: 55,
-      },
-    ]
+    AllItemArr : [],
+    ItemArr : [],
+    showLimit : 8,
+    currPage : 1
   },
   onLoad: function () {
-    
+    var testArr = [];
+    for(var i=0;i<10;i++)
+    {
+      var item = {
+        shopId: 10000 + i,
+        img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+        name: "这是商品名字,这是商品名字,这是商品名字" + i,
+        costNum: 100,
+        sellNum: 55,
+      }
+      testArr.push(item);
+    } 
+    this.setData({
+      AllItemArr: testArr
+    })
+
+    this.handleItemArr();
+  },
+
+  //处理显示的数组
+  handleItemArr:function(){
+    var AllItemArr = this.data.AllItemArr;
+    var showLimit = this.data.showLimit;
+    var currPage = this.data.currPage;
+    var ItemArr = [];
+    var showNum = 0
+
+    if (AllItemArr.length >= showLimit * currPage)
+    {
+      showNum = showLimit * currPage
+    }else{
+      showNum = AllItemArr.length;
+    }
+
+    for (var i = 0; i < showNum;i++)
+    {
+      ItemArr.push(AllItemArr[i])
+    }
+
+    this.setData({
+      ItemArr : ItemArr
+    })
   },
 
   //主页图片点击

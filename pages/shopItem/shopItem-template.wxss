@@ -13,26 +13,27 @@
 }
 
 .name{
-  padding-top: 220rpx;
+  padding-top: 200rpx;
   position: absolute;
   width: 360rpx;
   font-size: 24rpx;
   letter-spacing: 2rpx;
 }
 
+.txtContain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100rpx;
+}
+
 .cost{
-  padding-top: 50rpx;
-  font-size: 24rpx;
+  font-size: 28rpx;
   letter-spacing: 2rpx;
 }
 
 .sellNum{
   font-size: 24rpx;
+  color:cornflowerblue;
   letter-spacing: 2rpx;
 }
-
-/*.movieItem-title{
-    margin-bottom: 16rpx;
-    font-size: 24rpx;
-    color: #666;
-}*/
