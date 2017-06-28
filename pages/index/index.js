@@ -1,6 +1,4 @@
-//index.js
 //获取应用实例
-var app = getApp()
 Page({
   data: {
     homePageImgs : [
@@ -13,7 +11,7 @@ Page({
   },
   onLoad: function () {
     var testArr = [];
-    for(var i=0;i<10;i++)
+    for(var i=0;i<97;i++)
     {
       var item = {
         shopId: 10000 + i,
@@ -63,6 +61,26 @@ Page({
 
   //商品项点击
   onShopItemClick:function(shopItem){
-    console.log(shopItem.currentTarget.dataset.shopId);
+    var shopId = shopItem.currentTarget.dataset.shopId;
+
+    wx.navigateTo({
+      url: '../shop/shopItemDetail/shopItemDetail?shopId=' + shopId,
+    })
+  },
+
+  //底部刷新数据
+  onReachBottom:function(event){
+    var cp = this.data.currPage;
+    var showLimit = this.data.showLimit;
+    var AllItemArr = this.data.AllItemArr;
+
+    if ((cp + 1) <= Math.ceil(AllItemArr.length / showLimit))
+    {
+      cp++;
+      this.setData({
+        currPage : cp
+      })
+      this.handleItemArr();
+    }
   }
 })

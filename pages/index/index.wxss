@@ -1,4 +1,4 @@
-@import "../shopItem/shopItem-template.wxss";
+@import "../shop/shopItem/shopItem-template.wxss";
 
 .homePageBanner {
   display: flex;

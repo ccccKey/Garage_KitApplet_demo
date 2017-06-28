@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/shop/shopItemDetail/shopItemDetail",
     "pages/logs/logs"
   ],
   "window":{

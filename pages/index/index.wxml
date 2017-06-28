@@ -1,4 +1,4 @@
-<import src="../shopItem/shopItem-template.wxml" />
+<import src="../shop/shopItem/shopItem-template.wxml"/>
 
 <view class="homePageBanner">
 
