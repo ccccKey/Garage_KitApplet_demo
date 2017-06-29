@@ -18,4 +18,25 @@
     </view>
   </view>
 
+  <view class="tabs">
+
+    <view class="tab1">
+      <icon class="search-img" type="search" size="13" color="#405f80" />
+      <text>客服</text>
+    </view>
+    <view class="tab2">
+      <icon class="search-img" type="search" size="13" color="#405f80" />
+      <text>收藏</text>
+    </view>
+    <view class="tab3">
+      <icon class="search-img" type="search" size="13" color="#405f80" />
+      <text>购物车</text>
+    </view>
+
+    <view class="tab4">加入购物车</view>
+    <view class="tab5">立即购买</view>
+
+
+  </view>
+
 </view>
