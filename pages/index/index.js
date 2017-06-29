@@ -1,10 +1,11 @@
+var app = getApp();
+
 //获取应用实例
 Page({
   data: {
     homePageImgs : [
       'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
     ],
-    AllItemArr : [],
     ItemArr : [],
     showLimit : 8,
     currPage : 1
@@ -16,22 +17,25 @@ Page({
       var item = {
         shopId: 10000 + i,
         img: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+        showImgs : [
+          'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+          'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+          'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+        ],
         name: "这是商品名字,这是商品名字,这是商品名字" + i,
         costNum: 100,
         sellNum: 55,
       }
       testArr.push(item);
     } 
-    this.setData({
-      AllItemArr: testArr
-    })
+    app.AllItemArr = testArr
 
     this.handleItemArr();
   },
 
   //处理显示的数组
   handleItemArr:function(){
-    var AllItemArr = this.data.AllItemArr;
+    var AllItemArr = app.AllItemArr;
     var showLimit = this.data.showLimit;
     var currPage = this.data.currPage;
     var ItemArr = [];
@@ -72,7 +76,7 @@ Page({
   onReachBottom:function(event){
     var cp = this.data.currPage;
     var showLimit = this.data.showLimit;
-    var AllItemArr = this.data.AllItemArr;
+    var AllItemArr = app.AllItemArr;
 
     if ((cp + 1) <= Math.ceil(AllItemArr.length / showLimit))
     {

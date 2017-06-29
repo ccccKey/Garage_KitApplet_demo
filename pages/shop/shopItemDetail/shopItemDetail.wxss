@@ -1,0 +1,13 @@
+.detailBanner{
+  display: flex;
+  flex-direction: column;
+}
+
+.banner{
+  height: 500rpx;
+}
+
+.bannerImg{
+  width: 100%;
+  height: 500rpx;
+}

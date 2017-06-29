@@ -1,1 +1,21 @@
-<text>{{shopId}}</text>
+<view class="detailBanner">
+
+  <swiper class="banner" indicator-dots="{{true}}" autoplay="false">
+    <block wx:for="{{shopData.showImgs}}" wx:for-item="item" wx:for-index="i">
+      <swiper-item>
+        <image class="bannerImg" src="{{item}}" catchtap="showPic" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="detailField">
+    <text class="shopName">黑猫手办</text>
+    <text class="costAndSell">100rmb已出售55</text>
+    <view class="ctrlNumField">
+      <image class="minusBtn" src=""></image>
+      <text class="showBuyNum"></text>
+      <image class="plusBtn" src=""></image>
+    </view>
+  </view>
+
+</view>
