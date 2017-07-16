@@ -1,0 +1,21 @@
+.normal {
+  margin: 20rpx 10rpx;
+  width: 230rpx;
+  height: 60rpx;
+  border: 1rpx solid #1aad19;
+  background-color: transparent;
+  display: flex;
+}
+
+.smallImg {
+  padding-left: 10rpx;
+  padding-top: 6rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.styleName {
+  padding-top: 19rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}

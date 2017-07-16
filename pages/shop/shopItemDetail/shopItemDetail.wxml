@@ -1,3 +1,5 @@
+<import src="../styleItem/styleItem-template.wxml" />
+
 <view class="detailBanner">
 
   <swiper class="banner" indicator-dots="{{true}}" autoplay="false">
@@ -9,12 +11,25 @@
   </swiper>
 
   <view class="detailField">
-    <text class="shopName">黑猫手办</text>
-    <text class="costAndSell">100rmb已出售55</text>
+    <text class="shopName">黑猫手办黑猫手办黑猫手办黑猫手办黑猫手办黑猫手办黑猫手办</text>
+    <view class="textField">
+      <text class="costSign">¥</text>
+      <text class="costTxt">100</text>
+      <text class="sellTxt">已出售55</text>
+    </view>
+
     <view class="ctrlNumField">
-      <image class="minusBtn" src=""></image>
-      <text class="showBuyNum"></text>
-      <image class="plusBtn" src=""></image>
+      <text class="styleTxt">款式</text>
+      <view class="choseStyle">
+        <block wx:for="{{shopData.styles}}" wx:for-item="styleItem" wx:for-index="i">
+          <template is="styleItemTemplate" data="{{name:styleItem}}" />
+        </block>
+      </view>
+      <view class="numCtrl">
+        <image class="mBtn" src=""></image>
+        <text class="buyNum">0</text>
+        <image class="pBtn" src=""></image>
+      </view>
     </view>
   </view>
 
@@ -25,7 +40,7 @@
         <image class="shopCarImg" src="../../../images/shopCar.png" mode="widthFix"></image>
       </view>
       <view class="tab2">
-        <text>立即购买</text>
+        <text class="buyTxt">立即购买</text>
       </view>
     </view>
 

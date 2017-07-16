@@ -1,0 +1,6 @@
+<template name="styleItemTemplate">
+  <view class="normal">
+     <image class="smallImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+     <text class="styleName">{{name}}</text>
+  </view>
+</template>

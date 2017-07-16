@@ -1,22 +1,80 @@
-.detailBanner{
+@import "../styleItem/styleItem-template.wxss";
+
+/*-----------------------------top field-------------------*/
+
+.detailBanner {
   display: flex;
   flex-direction: column;
 }
 
-.banner{
+.banner {
   height: 500rpx;
 }
 
-.bannerImg{
+.bannerImg {
   width: 100%;
   height: 500rpx;
 }
 
-.bottomContent{
+/*-----------------------------top field-------------------*/
+
+/*-----------------------------middle field-------------------*/
+
+.detailField {
+  background-color: #f2f2f2;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopName {
+  background-color: white;
+  font-size: 30rpx;
+  padding-bottom: 20rpx;
+}
+
+.textField {
+  background-color: white;
+  padding-bottom: 30rpx;
+}
+
+.costSign {
+  font-size: 30rpx;
+}
+
+.costTxt {
+  font-size: 40rpx;
+}
+
+.sellTxt {
+  margin-left: 20rpx;
+  font-size: 24rpx;
+}
+
+.ctrlNumField {
+  margin-top: 30rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.styleTxt {
+  padding: 30rpx 0 10rpx 30rpx;
+  font-size: 30rpx;
+}
+
+.choseStyle {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*-----------------------------middle field-------------------*/
+
+/*-----------------------------bottom field-------------------*/
+
+.bottomContent {
   width: 100%;
-  /*height: 100%;*/
   height: 120rpx;
-  /* display: flex;  */
   position: fixed;
   bottom: 0rpx;
   border-top-width: 1rpx;
@@ -24,38 +82,38 @@
   border-right-width: 0;
   border-bottom-width: 0;
   border-style: solid;
-  border-color: lightgray;
+  border-color: #f2f2f2;
+  background-color: white;
 }
 
-.tabs{
-display: flex; 
- margin-top: 20rpx; 
-height: 80rpx;
+.tabs {
+  display: flex;
+  margin-top: 20rpx;
+  height: 80rpx;
 }
 
-.tab1{
-  /* flex: 1; */
-   margin-left: 25rpx;  
-  /* margin-top: 8rpx; */
+.tab1 {
+  margin-left: 25rpx;
   width: 210rpx;
- border-width: 1rpx;
- border-color: lightgray;
- border-style: solid;
+  border-width: 1rpx;
+  border-color: #f2f2f2;
+  border-style: solid;
 }
 
-.shopCarImg{
- height: 60rpx;
- width: 60rpx;
+.shopCarImg {
+  height: 60rpx;
+  width: 60rpx;
   margin-left: 75rpx;
- margin-top: 8rpx; 
- /* border-width: 1rpx;
- border-color: lightgray;
- border-style: solid; */
+  margin-top: 8rpx;
 }
 
-.tab2{
-  /* flex: 2; */
-  margin-left: 300rpx;
-   text-align: center; 
-  background-color: #e71db0; 
+.tab2 {
+  width: 470rpx;
+  margin-left: 20rpx;
+  text-align: center;
+  background-color: #e71db0;
+  color: white;
+  padding-top: 18rpx;
 }
+
+/*-----------------------------bottom field-------------------*/

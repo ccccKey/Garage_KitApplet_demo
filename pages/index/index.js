@@ -23,6 +23,12 @@ Page({
           'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
         ],
         name: "这是商品名字,这是商品名字,这是商品名字" + i,
+        styles: [
+          '白猫',
+          '粉裙黑猫',
+          '泳装黑猫',
+          '圣天使黑猫'
+        ],
         costNum: 100,
         sellNum: 55,
       }
