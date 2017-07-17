@@ -70,6 +70,7 @@ Page({
   //选择款式
   styleSelect:function(event){
     var tarId = event.currentTarget.dataset.index;
+    var sData = this.data.shopData;
 
     console.log(tarId);
     
@@ -77,7 +78,24 @@ Page({
       selectTar : tarId
     })
 
-    console.log(this.data.selectTar);
+    for (var i = 0; i < sData.styles.length; i++) {
+      sData.styles[i].chosen = false;
+      this.setData({
+        shopData: sData
+      })
+    }
+
+    for (var i = 0; i < sData.styles.length;i++)
+    {
+      if (tarId == i)
+      {
+        sData.styles[i].chosen = true
+        this.setData({
+          shopData: sData
+        })
+      }
+    }
+
   }
 
 })

@@ -75,30 +75,30 @@
 
 .buyNumTxt{
   font-size: 30rpx;
-  padding-left: 10rpx;
+  padding-left: 10rpx; 
 }
 
 .mpCtrl{
   display: flex;
-  margin-left: 440rpx;
-  background-color: lightgray;
-  width: 200rpx;
+  margin-left: 430rpx;
+  background-color: #f3f3f3;
+  width: 220rpx;
 }
 
 .mBtn{
-  padding-left: 5rpx;
-  padding-top: 5rpx;
+  padding-left: 15rpx;
   width: 30rpx;
   height: 30rpx;
 }
 
 .buyNum{
-  margin-left: 50rpx;
+  margin-left: 58rpx;
 }
 
 .pBtn{
+  position: absolute; 
   padding-top: 7rpx;
-  margin-left: 50rpx;
+  margin-left: 180rpx;
   width: 30rpx;
   height: 30rpx;
 }
@@ -106,6 +106,7 @@
 .showPic{
   margin-top: 30rpx;
   width: 100%;
+  background-color: white;
 }
 
 /*-----------------------------middle field-------------------*/

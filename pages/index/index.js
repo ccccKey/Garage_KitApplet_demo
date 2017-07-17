@@ -24,10 +24,10 @@ Page({
         ],
         name: "这是商品名字,这是商品名字,这是商品名字" + i,
         styles: [
-          '白猫',
-          '粉裙黑猫',
-          '泳装黑猫',
-          '圣天使黑猫'
+          {name:'白猫', chosen:false},
+          {name:'粉裙黑猫', chosen: false},
+          {name:'泳装黑猫', chosen: false },
+          {name:'圣天使黑猫', chosen: false },
         ],
         costNum: 100,
         sellNum: 55,
