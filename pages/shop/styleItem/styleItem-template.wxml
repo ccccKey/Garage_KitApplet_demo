@@ -1,6 +1,30 @@
 <template name="styleItemTemplate">
-  <view class="normal">
+
+<block wx:if="{{index == selectTar}}">
+<view class="select" data-index="{{index}}" bindtap="styleSelect">
      <image class="smallImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
      <text class="styleName">{{name}}</text>
   </view>
+</block>
+<block wx:else>
+<view class="normal" data-index="{{index}}" bindtap="styleSelect">
+     <image class="smallImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+     <text class="styleName">{{name}}</text>
+  </view>
+</block>
+
+  <!-- <view class="normal" data-index="{{index}}" bindtap="styleSelect">
+     <image class="smallImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+     <text class="styleName">{{name}}</text>
+  </view> -->
+
 </template>
+
+<!-- <block wx:for="{{liuliangItems}}">
+        <block wx:if="{{item.one2one == 1}}">
+          <button class="{{item.changeColor?'selected2':'selected1'}}" type="default" id="{{item.price}}" data-id="{{item.name}}" data-one="{{item.one2one}}" data-orderid="{{item.id}}" data-number="1" bindtap="setPrice">{{item.name}}</button>
+        </block>
+        <block wx:else>
+          <button class="{{item.changeColor?'selected':'normal'}}" type="default" id="{{item.price}}" data-id="{{item.name}}" data-one="{{item.one2one}}" data-orderid="{{item.id}}" data-number="1" bindtap="setPrice">{{item.name}}</button>
+        </block>
+      </block> -->

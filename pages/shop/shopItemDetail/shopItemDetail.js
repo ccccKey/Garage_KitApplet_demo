@@ -7,7 +7,9 @@ Page({
    */
   data: {
     shopId : 0,
-    shopData : {}
+    shopData : {},
+    buyNum: 1,
+    selectTar : -1
   },
 
   /**
@@ -36,5 +38,46 @@ Page({
       })
     }
   },
+
+  //减少购买数量
+  minusBuyNum:function(event){
+    var num = this.data.buyNum;
+
+    if (num - 1 >= 1)
+    {
+      num--;
+    } 
+
+    this.setData({
+      buyNum : num
+    })
+  },
+
+  //增加购买数量
+  plusBuyNum:function(event){
+    var num = this.data.buyNum;
+    var limitNum = app.buyLimit;
+
+    if (num + 1 <= limitNum) {
+      num++;
+    }
+
+    this.setData({
+      buyNum: num
+    })
+  },
+
+  //选择款式
+  styleSelect:function(event){
+    var tarId = event.currentTarget.dataset.index;
+
+    console.log(tarId);
+    
+    this.setData({
+      selectTar : tarId
+    })
+
+    console.log(this.data.selectTar);
+  }
 
 })

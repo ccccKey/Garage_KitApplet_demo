@@ -68,6 +68,46 @@
   flex-wrap: wrap;
 }
 
+.numCtrl{
+  display: flex;
+  margin: 30rpx 0 30rpx 20rpx;
+}
+
+.buyNumTxt{
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+
+.mpCtrl{
+  display: flex;
+  margin-left: 440rpx;
+  background-color: lightgray;
+  width: 200rpx;
+}
+
+.mBtn{
+  padding-left: 5rpx;
+  padding-top: 5rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.buyNum{
+  margin-left: 50rpx;
+}
+
+.pBtn{
+  padding-top: 7rpx;
+  margin-left: 50rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.showPic{
+  margin-top: 30rpx;
+  width: 100%;
+}
+
 /*-----------------------------middle field-------------------*/
 
 /*-----------------------------bottom field-------------------*/

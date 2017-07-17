@@ -22,15 +22,21 @@
       <text class="styleTxt">款式</text>
       <view class="choseStyle">
         <block wx:for="{{shopData.styles}}" wx:for-item="styleItem" wx:for-index="i">
-          <template is="styleItemTemplate" data="{{name:styleItem}}" />
+          <template is="styleItemTemplate" data="{{name:styleItem, index:i}}" />
         </block>
       </view>
+
       <view class="numCtrl">
-        <image class="mBtn" src=""></image>
-        <text class="buyNum">0</text>
-        <image class="pBtn" src=""></image>
+        <text class="buyNumTxt">数量</text>
+        <view class="mpCtrl">
+          <image class="mBtn" src="../../../images/icon_minus.png" mode="widthFix" catchtap="minusBuyNum"></image>
+          <text class="buyNum">{{buyNum}}</text>
+          <image class="pBtn" src="../../../images/icon_plus.png" mode="widthFix" catchtap="plusBuyNum"></image>
+        </view>
       </view>
     </view>
+
+    <image class="showPic" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg" mode="aspectFit" />
   </view>
 
   <view class="bottomContent">
