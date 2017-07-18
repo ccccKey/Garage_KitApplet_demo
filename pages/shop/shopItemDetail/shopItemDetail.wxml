@@ -45,7 +45,7 @@
       <view class="tab1">
         <image class="shopCarImg" src="../../../images/shopCar.png" mode="widthFix"></image>
       </view>
-      <view class="tab2">
+      <view class="tab2" catchtap="buyNow">
         <text class="buyTxt">立即购买</text>
       </view>
     </view>

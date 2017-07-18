@@ -6,10 +6,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    shopId : 0,
-    shopData : {},
+    shopId: 0,
+    shopData: {},
     buyNum: 1,
-    selectTar : -1
+    selectTar: -1
   },
 
   /**
@@ -17,13 +17,11 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      shopId : options.shopId
+      shopId: options.shopId
     })
 
-    for(var i=0;i<app.AllItemArr.length;i++)
-    {
-      if (app.AllItemArr[i].shopId == options.shopId)
-      {
+    for (var i = 0; i < app.AllItemArr.length; i++) {
+      if (app.AllItemArr[i].shopId == options.shopId) {
         this.setData({
           shopData: app.AllItemArr[i]
         })
@@ -31,30 +29,30 @@ Page({
     }
 
     var shopData = this.data.shopData;
-    if (shopData != {})
-    {
+    if (shopData != {}) {
       wx.setNavigationBarTitle({
         title: shopData.name,
       })
     }
+
+    this.setSelectOne(0);
   },
 
   //减少购买数量
-  minusBuyNum:function(event){
+  minusBuyNum: function (event) {
     var num = this.data.buyNum;
 
-    if (num - 1 >= 1)
-    {
+    if (num - 1 >= 1) {
       num--;
-    } 
+    }
 
     this.setData({
-      buyNum : num
+      buyNum: num
     })
   },
 
   //增加购买数量
-  plusBuyNum:function(event){
+  plusBuyNum: function (event) {
     var num = this.data.buyNum;
     var limitNum = app.buyLimit;
 
@@ -68,14 +66,12 @@ Page({
   },
 
   //选择款式
-  styleSelect:function(event){
+  styleSelect: function (event) {
     var tarId = event.currentTarget.dataset.index;
     var sData = this.data.shopData;
 
-    console.log(tarId);
-    
     this.setData({
-      selectTar : tarId
+      selectTar: tarId
     })
 
     for (var i = 0; i < sData.styles.length; i++) {
@@ -85,17 +81,37 @@ Page({
       })
     }
 
-    for (var i = 0; i < sData.styles.length;i++)
-    {
-      if (tarId == i)
-      {
+    this.setSelectOne(tarId);
+  },
+
+  //选中某一个款式
+  setSelectOne: function (tarId) {
+    var sData = this.data.shopData;
+    for (var i = 0; i < sData.styles.length; i++) {
+      if (tarId == i) {
         sData.styles[i].chosen = true
         this.setData({
           shopData: sData
         })
       }
     }
+    this.setData({
+      selectTar: tarId
+    })
+  },
 
+  //点击购买
+  buyNow:function(event){
+    var styleId = this.data.selectTar;
+    var buyNum = this.data.buyNum
+    var shopId = this.data.shopId;
+
+    var selectData = { shopId: shopId, styleId: styleId, nums: buyNum};
+    app.shoppingCarData = selectData;
+
+    wx.navigateTo({
+      url: '../settlement/settlePage?styleId=' + styleId,
+    })
   }
 
 })

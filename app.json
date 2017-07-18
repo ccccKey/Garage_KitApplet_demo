@@ -1,13 +1,14 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/shop/shopItemDetail/shopItemDetail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/shop/settlement/settlePage"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }
