@@ -1,1 +1,17 @@
 @import "../settleItem/settleItem-template.wxss";
+
+.settItemField{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.stAddressField{
+  margin: 10rpx 0 30rpx 0;
+  background-color: white;
+}
+
+.addressDes{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
