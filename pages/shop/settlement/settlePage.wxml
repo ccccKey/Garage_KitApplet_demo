@@ -1,2 +1,22 @@
-<!--settlePage.wxml-->
-<text>settlePage.wxml</text>
+<import src="../settleItem/settleItem-template.wxml"/>
+
+<view class="settItemField">
+
+  <view class="stAddressField">
+    <text class="addressDes">一键获取微信地址</text>
+  </view>
+
+  <view class="settleItemField">
+    <template is="settleItemTemplate"></template>
+  </view>
+
+  <view class="stCostField">
+    <text class="stFreightTxt">本单免邮费</text>
+    <text class="stAllCostTxt">600</text>
+  </view>
+
+  <view class="stBottomField" catchtap="weChatBuyNow">
+    <text class="stBuyTxt">微信支付</text>
+  </view>
+
+</view>

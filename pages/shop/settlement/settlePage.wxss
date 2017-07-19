@@ -1,1 +1,1 @@
-/* settlePage.wxss */
+@import "../settleItem/settleItem-template.wxss";
