@@ -8,10 +8,14 @@
 
 .stAddressField{
   margin: 10rpx 0 30rpx 0;
-  background-color: white;
+  background-color: lightgreen;
 }
 
 .addressDes{
   padding-left: 20rpx;
   font-size: 30rpx;
+}
+
+.settleItemField{
+  display: flex;
 }

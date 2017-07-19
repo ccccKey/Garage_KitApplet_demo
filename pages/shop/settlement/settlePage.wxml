@@ -7,7 +7,7 @@
   </view>
 
   <view class="settleItemField">
-    <template is="settleItemTemplate"></template>
+    <template is="settleItemTemplate" data=""></template>
   </view>
 
   <view class="stCostField">
