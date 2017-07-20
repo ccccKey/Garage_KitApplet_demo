@@ -107,11 +107,11 @@ Page({
     var shopId = this.data.shopId;
 
     var selectData = [];
-    selectData[styleId] = { shopData: this.data.shopData, styleId: styleId, nums: buyNum};
+    selectData.push({ shopData: this.data.shopData, styleId: styleId, nums: buyNum});
     app.shoppingCarData = selectData;
 
     wx.navigateTo({
-      url: '../settlement/settlePage',
+      url: '../settlement/settlePage?shopId=' + this.data.shopData.shopId,
     })
   }
 

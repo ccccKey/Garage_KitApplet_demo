@@ -4,12 +4,46 @@
 
 .stImg{
   margin: 60rpx 30rpx; 
-  /* padding-left: 50rpx; */
-  width: 180rpx;
-  height: 90rpx;
+  width: 120rpx;
+  height: 80rpx;
+}
+
+.stMiddleField{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 60rpx 10rpx 0; 
+  width: 400rpx;
 }
 
 .stName{
-  font-size: 42rpx;
-  margin: 20rpx 60rpx 10rpx 20rpx; 
+  font-size: 36rpx;
+}
+
+.stStyleName{
+  font-size: 28rpx;
+  color: lightgray;
+  padding-top: 5rpx;
+}
+
+.stNumCtrl{
+  display: flex;
+  flex-direction: row;
+  /* background-color: #f3f3f3; */
+  background-color: lightgreen;
+  width: 250rpx;
+  margin-top: 20rpx;
+}
+
+.stMBtn{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.stBuyNum{
+  margin-left: 50rpx;
+}
+
+.stPBtn{
+  width: 30rpx;
+  height: 30rpx;
 }

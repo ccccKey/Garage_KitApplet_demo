@@ -1,14 +1,15 @@
 <template name="settleItemTemplate">
   <view class="stItemField">
     <image class="stImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
-    <text class="stName">0</text>
+    <view class="stMiddleField">
+      <text class="stName">{{shopData.name}}</text>
+      <text class="stStyleName">{{shopData.styles[styleId].name}}</text>
       <view class="stNumCtrl">
-        <view class="stMpCtrl">
-          <image class="stMBtn" src="../../../images/icon_minus.png" mode="widthFix" catchtap="minusBuyNum"></image>
-          <text class="stBuyNum">{{buyNum}}</text>
-          <image class="stPBtn" src="../../../images/icon_plus.png" mode="widthFix" catchtap="plusBuyNum"></image>
-        </view>
+         <image class="stMBtn" src="../../../images/icon_minus.png" mode="widthFix" catchtap="minusBuyNum"></image>
+         <text class="stBuyNum">{{styleId}}</text>
+         <image class="stPBtn" src="../../../images/icon_plus.png" mode="widthFix" catchtap="plusBuyNum"></image>
       </view>
+    </view>
       <text class="stCostSign">¥</text>
       <text class="stCost">300</text>
       <image class="stCloseBtn" src="../../../images/icon_plus.png"></image>

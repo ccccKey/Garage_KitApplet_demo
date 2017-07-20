@@ -7,7 +7,9 @@
   </view>
 
   <view class="settleItemField">
-    <template is="settleItemTemplate" data=""></template>
+    <block wx:for="{{shoppingCarData}}" wx:for-item="shopItem" wx:for-index="i">
+      <template is="settleItemTemplate" data="{{...shopItem, index:i}}" />
+    </block>
   </view>
 
   <view class="stCostField">
