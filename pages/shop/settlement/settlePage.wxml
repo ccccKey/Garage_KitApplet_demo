@@ -14,11 +14,13 @@
 
   <view class="stCostField">
     <text class="stFreightTxt">本单免邮费</text>
-    <text class="stAllCostTxt">600</text>
+    <text class="stAllCostTxt">¥{{costPrice}}</text>
   </view>
 
   <view class="stBottomField" catchtap="weChatBuyNow">
-    <text class="stBuyTxt">微信支付</text>
+    <view class="tab" catchtap="weChatBuyNow">
+      <text class="stBuyTxt">微信支付</text>
+    </view>
   </view>
 
 </view>

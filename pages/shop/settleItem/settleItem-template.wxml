@@ -5,13 +5,13 @@
       <text class="stName">{{shopData.name}}</text>
       <text class="stStyleName">{{shopData.styles[styleId].name}}</text>
       <view class="stNumCtrl">
-         <image class="stMBtn" src="../../../images/icon_minus.png" mode="widthFix" catchtap="minusBuyNum"></image>
-         <text class="stBuyNum">{{styleId}}</text>
-         <image class="stPBtn" src="../../../images/icon_plus.png" mode="widthFix" catchtap="plusBuyNum"></image>
+         <image class="stMBtn" src="../../../images/icon_minus.png" mode="widthFix" catchtap="minusBuyNum" data-index="{{index}}"></image>
+         <text class="stBuyNum">{{nums}}</text>
+         <image class="stPBtn" src="../../../images/icon_plus.png" mode="widthFix" catchtap="plusBuyNum" data-index="{{index}}"></image>
       </view>
     </view>
       <text class="stCostSign">¥</text>
-      <text class="stCost">300</text>
-      <image class="stCloseBtn" src="../../../images/icon_plus.png"></image>
+      <text class="stCost">{{nums * shopData.costNum}}</text>
+      <image class="stCloseBtn" src="../../../../images/xx.png" catchtap="closeThisSettle" data-index="{{index}}"></image>
   </view>
 </template>

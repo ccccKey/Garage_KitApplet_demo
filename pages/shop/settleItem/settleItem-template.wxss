@@ -11,7 +11,7 @@
 .stMiddleField{
   display: flex;
   flex-direction: column;
-  margin: 20rpx 60rpx 10rpx 0; 
+  margin: 20rpx 40rpx 10rpx 0; 
   width: 400rpx;
 }
 
@@ -32,18 +32,39 @@
   background-color: lightgreen;
   width: 250rpx;
   margin-top: 20rpx;
+  margin-bottom: 30rpx;
 }
 
 .stMBtn{
   width: 30rpx;
   height: 30rpx;
+  margin: 8rpx 0 0 10rpx;
 }
 
 .stBuyNum{
-  margin-left: 50rpx;
+  margin-left: 75rpx;
 }
 
 .stPBtn{
   width: 30rpx;
   height: 30rpx;
+  margin: 7rpx 0 0 220rpx;
+  position: absolute; 
+}
+
+.stCostSign{
+  margin-top: 75rpx;
+  font-size: 32rpx;
+}
+
+.stCost{
+  margin-top: 70rpx;
+}
+
+.stCloseBtn{
+  width: 20rpx;
+  height: 20rpx;
+  margin-top: 170rpx;
+  margin-left: 710rpx;
+  position: absolute; 
 }

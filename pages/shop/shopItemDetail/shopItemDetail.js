@@ -108,6 +108,7 @@ Page({
 
     var selectData = [];
     selectData.push({ shopData: this.data.shopData, styleId: styleId, nums: buyNum});
+    // selectData.push({ shopData: this.data.shopData, styleId: styleId, nums: buyNum });
     app.shoppingCarData = selectData;
 
     wx.navigateTo({
