@@ -1,0 +1,25 @@
+<view class="EntranceField">
+
+ <view class="idEnt">
+   <text class="idNameTxt">亲爱的动漫会员:abcdefg</text>
+ </view>
+
+ <view class="settleEnt">
+   <text class="settleTxt">全部订单</text>
+ </view>
+
+ <view class="payEnt" catchtap="gotoPayOrder">
+   <text class="payTxt">待支付</text>
+   <text class="payNum">1</text>
+ </view>
+
+ <view class="statusEnt">
+   <text class="statusTxt">待收货</text>
+   <text class="statusNum">2</text>
+ </view>
+
+ <view class="serviceEnt">
+   <text class="serviceTxt">找客服</text>
+ </view>
+
+</view>

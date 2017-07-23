@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/shop/shopItemDetail/shopItemDetail",
     "pages/logs/logs",
-    "pages/shop/settlement/settlePage"
+    "pages/shop/settlement/settlePage",
+    "pages/personal/personalCenter/personalCenter",
+    "pages/personal/order/payOrder"
   ],
   "window": {
     "backgroundTextStyle": "light",

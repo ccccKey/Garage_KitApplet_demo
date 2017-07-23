@@ -92,5 +92,20 @@ Page({
       })
       this.handleItemArr();
     }
+  },
+
+  //前往个人中心
+  goHome:function(event){
+    wx.navigateTo({
+      url: '../personal/personalCenter/personalCenter',
+    })
+  },
+
+  //前往购物车
+  goCar:function(event){
+    wx.navigateTo({
+      url: '../shop/settlement/settlePage',
+    })
   }
+
 })

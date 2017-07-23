@@ -19,3 +19,24 @@
   margin-bottom: 20rpx;
 }
 
+.homeCtrlField{
+  width: 180rpx;
+  height: 80rpx;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.homeCtrl{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.shopCarCtrl{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
