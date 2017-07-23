@@ -1,0 +1,11 @@
+<template name="orderItemTemplate">
+  <view class="orItemField">
+    <image class="orImg" src="http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg"></image>
+    <view class="orMiddleField">
+      <text class="orName">{{shopData.name}}</text>
+      <text class="orStyleName">{{shopData.styles[styleId].name}}</text>
+    </view>
+      <text class="orCostSign">¥</text>
+      <text class="orCost">{{nums * shopData.costNum}}</text>
+  </view>
+</template>
