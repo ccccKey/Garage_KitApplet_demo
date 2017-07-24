@@ -15,7 +15,7 @@
 </view>
 
 <view class="orderCtrlField">
-    <text class="orderDesTxt">共3件商品 实付¥45.00</text>
+    <text class="orderDesTxt">共3件商品 实付¥45.0</text>
     <view class="orderCancelBtn">
       <text class="orderCancelTxt">取消订单</text>
     </view>
