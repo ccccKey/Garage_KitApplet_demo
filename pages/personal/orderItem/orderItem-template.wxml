@@ -7,5 +7,6 @@
     </view>
       <text class="orCostSign">¥</text>
       <text class="orCost">{{nums * shopData.costNum}}</text>
+      <text class="orNums">x{{nums}}</text>
   </view>
 </template>

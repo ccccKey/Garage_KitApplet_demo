@@ -26,10 +26,17 @@
 }
 
 .orCostSign{
-  margin-top: 75rpx;
+  margin-top: 15rpx;
   font-size: 32rpx;
 }
 
 .orCost{
-  margin-top: 70rpx;
+  margin-top: 10rpx;
+}
+
+.orNums{
+  position: absolute;
+  margin-top: 80rpx;
+  margin-left: 620rpx;
+  font-size: 32rpx;
 }

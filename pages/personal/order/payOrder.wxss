@@ -1,1 +1,27 @@
-/* payOrder.wxss */
+@import "../orderItem/orderItem-template.wxss";
+
+.payOrderField{
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.orderStatusField{
+  margin: 10rpx 0 30rpx 0;
+  background-color: white;
+}
+
+.orderIdTxt{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+}
+
+.statusTxt{
+  font-size: 30rpx;
+  color: lightblue;
+  margin-left: 350rpx;
+}
+
+.orderItemField{
+  background-color: white;
+}
