@@ -23,4 +23,5 @@
 <view class="homeCtrlField">
  <image class="homeCtrl" src="../../images/home.png" catchtap="goHome"></image>
  <image class="shopCarCtrl" src="../../images/shopCar2.png" catchtap="goCar"></image>
+ <text class="shopCarNum">{{shopCarNum}}</text>
 </view>

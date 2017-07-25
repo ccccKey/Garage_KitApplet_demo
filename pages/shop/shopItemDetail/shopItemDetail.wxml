@@ -44,6 +44,7 @@
     <view class="tabs">
       <view class="tab1" catchtap="gotoShopCar">
         <image class="shopCarImg" src="../../../images/shopCar.png" mode="widthFix"></image>
+        <text class="shopCarNum">{{shopCarNum}}</text>
       </view>
       <view class="tab2" catchtap="buyNow">
         <text class="buyTxt">立即购买</text>

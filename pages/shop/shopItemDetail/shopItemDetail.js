@@ -9,7 +9,8 @@ Page({
     shopId: 0,
     shopData: {},
     buyNum: 1,
-    selectTar: -1
+    selectTar: -1,
+    shopCarNum : ""
   },
 
   /**
@@ -36,6 +37,16 @@ Page({
     }
 
     this.setSelectOne(0);
+  },
+
+  onShow:function(options){
+    var num = app.shoppingCarData.length.toString();
+    if (app.shoppingCarData.length == 0){
+      num = "";
+    }
+    this.setData({
+      shopCarNum : num
+    })
   },
 
   //减少购买数量

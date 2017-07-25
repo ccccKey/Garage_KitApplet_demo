@@ -141,6 +141,12 @@
   border-style: solid;
 }
 
+.shopCarNum{
+  font-size: 32rpx;
+  color: red;
+  position: absolute;
+}
+
 .shopCarImg {
   height: 60rpx;
   width: 60rpx;

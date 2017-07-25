@@ -24,6 +24,7 @@
   height: 80rpx;
   position: fixed;
   bottom: 0rpx;
+  display: flex;
 }
 
 .homeCtrl{
@@ -37,6 +38,14 @@
   width: 60rpx;
   height: 60rpx;
   margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+
+.shopCarNum{
+  font-size: 24rpx;
+  color: black;
+  position: absolute;
+  margin-left: 125rpx;
   margin-top: 10rpx;
 }
 

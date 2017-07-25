@@ -8,7 +8,8 @@ Page({
     ],
     ItemArr : [],
     showLimit : 8,
-    currPage : 1
+    currPage : 1,
+    shopCarNum: ""
   },
   onLoad: function () {
     var testArr = [];
@@ -37,6 +38,16 @@ Page({
     app.AllItemArr = testArr
 
     this.handleItemArr();
+  },
+
+  onShow: function (options) {
+    var num = app.shoppingCarData.length.toString();
+    if (app.shoppingCarData.length == 0) {
+      num = "";
+    }
+    this.setData({
+      shopCarNum: num
+    })
   },
 
   //处理显示的数组
