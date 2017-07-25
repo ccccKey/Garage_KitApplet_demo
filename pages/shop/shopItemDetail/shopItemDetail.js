@@ -100,6 +100,22 @@ Page({
     })
   },
 
+  //取消选择,变成默认
+  clearSelect:function(tarId){
+    var sData = this.data.shopData;
+    for (var i = 0; i < sData.styles.length; i++) {
+      sData.styles[i].chosen = false;
+      this.setData({
+        shopData: sData
+      })
+    }
+
+    this.setData({
+      buyNum: 1,
+    })
+    this.setSelectOne(0);
+  },
+
   //点击购买
   buyNow:function(event){
     var styleId = this.data.selectTar;
@@ -111,8 +127,18 @@ Page({
     // selectData.push({ shopData: this.data.shopData, styleId: styleId, nums: buyNum });
     app.shoppingCarData = selectData;
 
+    // this.setSelectOne(0);
+    this.clearSelect();
+
     wx.navigateTo({
       url: '../settlement/settlePage?shopId=' + this.data.shopData.shopId,
+    })
+  },
+
+  //前往购物车
+  gotoShopCar:function(event){
+    wx.navigateTo({
+      url: '../settlement/settlePage',
     })
   }
 

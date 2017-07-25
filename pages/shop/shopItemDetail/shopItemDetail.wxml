@@ -42,7 +42,7 @@
   <view class="bottomContent">
 
     <view class="tabs">
-      <view class="tab1">
+      <view class="tab1" catchtap="gotoShopCar">
         <image class="shopCarImg" src="../../../images/shopCar.png" mode="widthFix"></image>
       </view>
       <view class="tab2" catchtap="buyNow">

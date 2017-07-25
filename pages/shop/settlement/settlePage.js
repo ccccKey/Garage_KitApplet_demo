@@ -67,6 +67,8 @@ Page({
     this.setData({
       shoppingCarData: shoppingCarData,
     })
+
+    app.globalData.shoppingCarData = shoppingCarData;
     this.handleCost();
   },
 
@@ -89,6 +91,7 @@ Page({
       shoppingCarData: shoppingCarData,
     })
 
+    app.globalData.shoppingCarData = shoppingCarData;
     this.handleCost();
   },
 
