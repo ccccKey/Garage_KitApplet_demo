@@ -10,12 +10,12 @@
 
  <view class="payEnt" catchtap="gotoPayOrder">
    <text class="payTxt">待支付</text>
-   <text class="payNum">1</text>
+   <text class="payNum">{{getNums}}</text>
  </view>
 
  <view class="statusEnt">
    <text class="statusTxt">待收货</text>
-   <text class="statusNum">2</text>
+   <text class="statusNum"></text>
  </view>
 
  <view class="serviceEnt">

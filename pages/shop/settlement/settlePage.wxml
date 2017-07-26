@@ -1,7 +1,10 @@
 <import src="../settleItem/settleItem-template.wxml" />
 
 <block wx:if="{{shoppingCarData.length == 0}}">
-  <text class="">购物车空空如也</text>
+  <view class="nothingField">
+    <image class="bigShopCar" src="../../../images/bigCar.png"></image>
+    <text class="nothingTxt">购物车空空如也</text>
+  </view>
 </block>
 <block wx:else>
 

@@ -8,7 +8,8 @@ Page({
    */
   data: {
     shoppingCarData: [],
-    costPrice : 0
+    costPrice : 0,
+    costDes : ""
   },
 
   /**
@@ -25,6 +26,29 @@ Page({
     })
 
     this.handleCost();
+  },
+
+  onShow:function(options){
+    var shoppingCarData = this.data.shoppingCarData;
+    var cost = 0;
+    var costTxt = "";
+
+    for (var i = 0; i < shoppingCarData.length;i++)
+    {
+      cost += shoppingCarData[i].nums * shoppingCarData[i].shopData.costNum;
+    }
+
+    if(cost == 0)
+    {
+      costTxt = "";
+    }else{
+      costTxt = cost.toString();
+    }
+
+    var costDes = "共" + shoppingCarData.length.toString() + "件商品  实付¥" + costTxt;
+    this.setData({
+      costDes : costDes
+    })
   },
 
   //处理费用

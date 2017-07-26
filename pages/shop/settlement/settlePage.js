@@ -48,6 +48,8 @@ Page({
         }
       }
     })
+
+    app.shoppingCarData = data;
   },
 
   //减少购买数量

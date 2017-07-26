@@ -1,11 +1,14 @@
 // personalCenter.js
+var app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    payNums : "",
+    getNums : ""
   },
 
   /**
@@ -13,6 +16,20 @@ Page({
    */
   onLoad: function (options) {
   
+  },
+
+  onShow:function(event){
+    var shopCarNum = app.shoppingCarData.length;
+    if(shopCarNum == 0)
+    {
+      this.setData({
+        getNums : ""
+      })
+    }else{
+      this.setData({
+        getNums: shopCarNum.toString()
+      })
+    }
   },
 
   //前往订单支付页面

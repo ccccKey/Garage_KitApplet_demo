@@ -79,3 +79,19 @@
   padding-top: 15rpx; 
   font-size: 30rpx;
 }
+
+.nothingField{
+  display: flex;
+  flex-direction: column;
+}
+
+.bigShopCar{
+  width: 400rpx;
+  height: 400rpx;
+  margin: 80rpx 150rpx 50rpx 150rpx;
+}
+
+.nothingTxt{
+  font-size: 50rpx;
+  text-align: center;
+}
